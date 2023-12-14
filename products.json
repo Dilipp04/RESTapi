@@ -1,0 +1,26 @@
+[
+    {
+        "name":"iphone",
+        "price":154,
+        "featured":true,
+        "company":"apple"
+    },
+    {
+        "name":"redmi 10",
+        "price":15499,
+        "featured":true,
+        "company":"mi"
+    },
+    {
+        "name":"galaxy S23",
+        "price":55000,
+        "featured":true,
+        "company":"samsung"
+    },
+    {
+        "name":"inspiron",
+        "price":154000,
+        "featured":true,
+        "company":"dell"
+    }
+]
