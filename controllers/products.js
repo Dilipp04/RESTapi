@@ -20,19 +20,11 @@ const getAllProducts = async (req, res) => {
   if (select) {
     apiData = apiData.select(select.split(",").join(" "));
   }
-  const data = await apiData;
-  res.send(data);
-};
-const getAllProductsTesting = async (req, res) => {
   const page = Number(req.query.page) || 1;
   const limit = Number(req.query.limit) || 3;
   let skip = (page - 1) * limit;
-
-  let apiData = Product.find({});
   apiData = apiData.skip(skip).limit(limit);
   const data = await apiData;
-
-  res.json({page,Results:data.length,data});
+  res.send(data);
 };
-
-module.exports = { getAllProducts, getAllProductsTesting };
+module.exports = { getAllProducts };
